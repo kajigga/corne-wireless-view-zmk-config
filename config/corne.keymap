@@ -14,16 +14,16 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// | ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | MINUS |
+// | TAB | A/CT | S/AL | D/GU | F/SF |  G  |   |  H  | J/SF | K/GU | L/AL | ;/CT |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | BSLH |
+//                    | RS/ESC | RS/TAB | SPC |   | LW/RET | BSPC | TRNS |
                         display-name = "Base";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp ESC     &kp Q        &kp W        &kp E        &kp R        &kp T     &kp Y     &kp U        &kp I        &kp O          &kp P       &kp MINUS
+   &kp TAB     &mt LCTL A   &mt LALT S   &mt LGUI D   &mt LSHFT F  &kp G     &kp H     &mt RSHFT J  &mt RGUI K   &mt RALT L     &mt RCTL SEMI &kp SQT
+   &lt 3 &caps_word &kp Z        &kp X        &kp C        &kp V        &kp B     &kp N     &kp M        &kp COMMA    &kp DOT        &kp FSLH     &kp BSLH
+                 &lt 2 ESC   &lt 2 TAB    &kp SPACE                 &lt 1 RET &kp BSPC  &trans
                         >;
                 };
                 lower_layer {
