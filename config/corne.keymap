@@ -14,8 +14,8 @@
                 gres: grave_escape {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp ESC>, <&kp GRAVE>, <&kp TILDE>;
-                        mods = <(MOD_LSFT|MOD_RSFT)>, <(MOD_LALT|MOD_RALT)>;
+                        bindings = <&kp ESC>, <&kp GRAVE>;
+                        mods = <(MOD_LSFT|MOD_RSFT)>;
                 };
         };
         keymap {
