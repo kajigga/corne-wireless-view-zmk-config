@@ -7,8 +7,5 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-caps-word
-      remote: zmkfirmware
-      revision: main
   self:
     path: config
