@@ -1,5 +1,8 @@
 clear:
 	rm -fv *.uf2
+push:
+	git push origin master
+	gh run watch
 download: clear
 	gh run download -n firmware
 
