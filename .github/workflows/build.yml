@@ -3,5 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-    with:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
