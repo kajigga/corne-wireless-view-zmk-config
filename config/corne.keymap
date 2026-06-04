@@ -42,7 +42,8 @@
             tap-ms = <5>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
         };
-		 hml: home_row_mod_left {
+
+        hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -50,9 +51,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -61,6 +64,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
@@ -75,10 +79,10 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-&kp ESC     &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y         &kp U          &kp I       &kp O       &kp P           &kp MINUS
-&kp TAB     &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G &kp H &hmr RSHFT J    &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
-&caps_word  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N         &kp M          &kp COMMA   &kp PERIOD  &kp SLASH       &kp BACKSLASH
-                                     &trans      &lt 1 TAB    &kp SPACE    &lt 2 RETURN  &kp BACKSPACE  &trans
+&kp ESC     &kp Q         &kp W        &kp E        &kp R         &kp T        &kp Y         &kp U          &kp I        &kp O        &kp P            &kp MINUS
+&kp TAB     &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G        &kp H         &hmr RSHFT J   &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI  &kp SQT
+&caps_word  &kp Z         &kp X        &kp C        &kp V         &kp B        &kp N         &kp M          &kp COMMA    &kp PERIOD   &kp SLASH        &kp BACKSLASH
+                                       &td0         &lt 1 TAB     &kp SPACE    &lt 2 RETURN  &kp BACKSPACE  &trans
             >;
         };
 
