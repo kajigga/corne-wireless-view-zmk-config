@@ -12,6 +12,11 @@
 
 / {
     behaviors {
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+			continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>
+        };
         gres: grave_escape {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -98,7 +103,7 @@
         layer_3 {
             display-name = "Nav";
             bindings = <
-&trans  &kp GRAVE  &trans    &trans    &trans     &trans    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
+&trans  &kp GRAVE  &bt BT_SEL 0     &bt BT_SEL 1 &trans     &trans    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
 &trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp EQUAL  &kp PLUS
 &trans  &trans     &trans    &trans    &trans     &trans    &trans    &kp LPAR  &kp RPAR  &trans     &trans     &trans
                              &trans    &trans     &trans    &trans    &trans    &trans
