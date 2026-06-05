@@ -15,7 +15,7 @@
         caps_word: caps_word {
             compatible = "zmk,behavior-caps-word";
             #binding-cells = <0>;
-			continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>
+			continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
         };
         gres: grave_escape {
             compatible = "zmk,behavior-mod-morph";
