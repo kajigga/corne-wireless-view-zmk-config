@@ -103,7 +103,7 @@
         layer_3 {
             display-name = "Nav";
             bindings = <
-&trans  &kp GRAVE  &bt 0          &bt 1          &trans     &trans    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
+&trans  &kp GRAVE  &bt 3 0        &bt 3 1        &trans     &trans    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
 &trans  &sk LCTRL  &sk LALT  &sk LGUI  &sk LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp EQUAL  &kp PLUS
 &trans  &trans     &trans    &trans    &trans     &trans    &trans    &kp LPAR  &kp RPAR  &trans     &trans     &trans
                              &trans    &trans     &trans    &trans    &trans    &trans
