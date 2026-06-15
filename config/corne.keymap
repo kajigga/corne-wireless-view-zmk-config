@@ -55,13 +55,14 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             require-prior-idle-ms = <120>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <190>;
             quick-tap-ms = <185>;
             bindings = <&kp>, <&kp>;
 
             // hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
 
             hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 23 22 20 21 19 18 30 31 32 33 34 35 39 40 41>;
         };
 
         hmr: home_row_mod_right {
@@ -76,6 +77,8 @@
             // hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
 
             hold-trigger-on-release;
+            retro-tap;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 37 36 38>;
         };
 
         cw_minus: cw_minus {
