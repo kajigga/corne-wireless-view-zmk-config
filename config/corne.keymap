@@ -110,7 +110,7 @@
             display-name = "BaseC";
             bindings = <
 &kp ESC     &kp Q         &kp W        &kp F        &kp P         &kp B		   &kp J         &kp L          &kp U        &kp Y        &kp SEMI            &kp MINUS
-&kp TAB     &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp G        &kp M         &hmr RSHFT N   &hmr RGUI E  &hmr LALT I  &hmr RCTRL OEMI  &kp SQT
+&kp TAB     &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp G		   &kp M         &hmr RSHFT N   &hmr RGUI E  &hmr LALT I  &hmr RCTRL O		  &kp SQT
 &caps_word  &kp Z         &kp X        &kp C        &kp D         &kp V        &kp K         &kp H          &kp COMMA    &kp PERIOD   &kp SLASH        &kp BACKSLASH
                                        &td0         &lt 1 TAB     &kp SPACE    &lt 2 RETURN  &kp BACKSPACE  &trans
             >;
