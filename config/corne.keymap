@@ -72,7 +72,6 @@
             retro-tap;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 37 36 38>;
         };
-
     };
 
     macros {
@@ -94,9 +93,9 @@
         layer_1 {
             display-name = "colemak";
             bindings = <
-&kp ESC     &kp Q         &kp W        &kp F        &kp P         &kp B		   &kp J         &kp L          &kp U        &kp Y        &kp SEMI            &kp MINUS
-&kp TAB     &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp G		   &kp M         &hmr RSHFT N   &hmr RGUI E  &hmr LALT I  &hmr RCTRL O		  &kp SQT
-&caps_word  &kp Z         &kp X        &kp C        &kp D         &kp V        &kp K         &kp H          &kp COMMA    &kp PERIOD   &kp SLASH        &kp BACKSLASH
+&kp ESC     &kp Q         &kp W        &kp F        &kp P         &kp B        &kp J         &kp L          &kp U        &kp Y        &kp SEMI      &kp MINUS
+&kp TAB     &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp G        &kp M         &hmr RSHFT N   &hmr RGUI E  &hmr LALT I  &hmr RCTRL O  &kp SQT
+&caps_word  &kp Z         &kp X        &kp C        &kp D         &kp V        &kp K         &kp H          &kp COMMA    &kp PERIOD   &kp SLASH     &kp BACKSLASH
                                        &td0         &lt 2 TAB     &kp SPACE    &lt 3 RETURN  &kp BACKSPACE  &trans
             >;
         };
@@ -213,16 +212,16 @@
 
         combo_qwerty {
             timeout-ms = <150>;
-            key-positions = <36 41>;
+            key-positions = <29 30>;
             layers = <0>;
             bindings = <&tog 1>;
         };
 
         combo_colemak {
             timeout-ms = <150>;
-            key-positions = <36 41>;
+            key-positions = <29 30>;
             layers = <1>;
-            bindings = <&tog 0>;
+            bindings = <&to 0>;
         };
     };
 };
