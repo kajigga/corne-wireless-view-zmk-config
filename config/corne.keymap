@@ -82,7 +82,7 @@
         compatible = "zmk,keymap";
 
         layer_0 {
-            display-name = "Base";
+            display-name = "qwerty";
             bindings = <
 &kp ESC     &kp Q         &kp W        &kp E        &kp R         &kp T        &kp Y         &kp U          &kp I        &kp O        &kp P            &kp MINUS
 &kp TAB     &hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHFT F  &kp G        &kp H         &hmr RSHFT J   &hmr RGUI K  &hmr LALT L  &hmr RCTRL SEMI  &kp SQT
@@ -92,7 +92,7 @@
         };
 
         layer_1 {
-            display-name = "BaseC";
+            display-name = "colemak";
             bindings = <
 &kp ESC     &kp Q         &kp W        &kp F        &kp P         &kp B		   &kp J         &kp L          &kp U        &kp Y        &kp SEMI            &kp MINUS
 &kp TAB     &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp G		   &kp M         &hmr RSHFT N   &hmr RGUI E  &hmr LALT I  &hmr RCTRL O		  &kp SQT
