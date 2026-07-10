@@ -221,7 +221,7 @@
             timeout-ms = <150>;
             key-positions = <29 30>;
             layers = <1>;
-            bindings = <&to 0>;
+            bindings = <&tog 1>;
         };
     };
 };
