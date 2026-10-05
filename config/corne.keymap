@@ -89,6 +89,13 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
+        BT_reset_x2tap: BT_reset_x2tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_RESET_X2TAP";
+            #binding-cells = <0>;
+            bindings = <&none>, <&bt BT_CLR>;
+        };
     };
 
     macros {
@@ -120,10 +127,10 @@
         layer_3 {
             display-name = "Nav";
             bindings = <
-&trans  &kp GRAVE  &bt BT_NXT  &trans    &trans     &trans    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
-&trans  &sk LCTRL  &sk LALT    &sk LGUI  &sk LSHFT  &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp EQUAL  &kp PLUS
-&trans  &trans     &trans      &trans    &trans     &trans    &trans    &kp LPAR  &kp RPAR  &trans     &trans     &trans
-                               &trans    &trans     &trans    &trans    &trans    &trans
+&trans  &kp GRAVE  &bt BT_NXT  &trans    &trans     &BT_reset_x2tap    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
+&trans  &sk LCTRL  &sk LALT    &sk LGUI  &sk LSHFT  &trans             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp EQUAL  &kp PLUS
+&trans  &trans     &trans      &trans    &trans     &trans             &trans    &kp LPAR  &kp RPAR  &trans     &trans     &trans
+                               &trans    &trans     &trans             &trans    &trans    &trans
             >;
         };
 
