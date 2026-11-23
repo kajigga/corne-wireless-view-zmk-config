@@ -147,10 +147,10 @@
         layer_4 {
             display-name = "Numpad";
             bindings = <
-&trans  &trans  &trans  &kp LC(LG(A))  &trans  &trans    &trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
-&trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS
-&trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_COMMA
-                        &trans         &trans  &trans    &trans  &trans  &kp KP_N0
+&trans  &trans  &trans  &kp LC(LG(A))  &trans  &trans    &trans  &trans           &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MINUS
+&trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans           &kp KP_N4   &kp KP_N5  &kp KP_N6  &kp KP_PLUS
+&trans  &trans  &trans  &trans         &trans  &trans    &trans  &trans           &kp KP_N1   &kp KP_N2  &kp KP_N3  &kp KP_COMMA
+                        &trans         &trans  &trans    &trans  &kp KP_NUMBER_0  &kp PERIOD
             >;
         };
 
@@ -196,7 +196,7 @@
 
         combo_1 {
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <2 1>;
             bindings = <&kp GRAVE>;
         };
 
