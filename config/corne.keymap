@@ -127,10 +127,10 @@
         nav {
             display-name = "Nav";
             bindings = <
-&trans  &kp GRAVE  &trans    &trans      &trans      &BT_reset_x2tap    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
-&trans  &sk LCTRL  &sk LALT  &sk LGUI    &sk LSHFT   &trans             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp EQUAL  &kp PLUS
-&trans  &trans     &trans    &bt BT_PRV  &bt BT_NXT  &trans             &trans    &kp LPAR  &kp RPAR  &trans     &trans     &trans
-                             &trans      &trans      &trans             &trans    &trans    &trans
+&trans  &kp GRAVE  &kp LS(GRAVE)  &trans      &trans      &BT_reset_x2tap    &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC   &trans     &trans
+&trans  &sk LCTRL  &sk LALT       &sk LGUI    &sk LSHFT   &trans             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp EQUAL  &kp PLUS
+&trans  &trans     &trans         &bt BT_PRV  &bt BT_NXT  &trans             &trans    &kp LPAR  &kp RPAR  &trans     &trans     &trans
+                                  &trans      &trans      &trans             &trans    &trans    &trans
             >;
         };
 
@@ -144,7 +144,7 @@
             >;
         };
 
-        layer_4 {
+        numpad {
             display-name = "Numpad";
             bindings = <
 &trans  &trans  &trans  &kp LC(LG(A))  &trans  &trans    &trans  &trans           &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MINUS
@@ -154,12 +154,12 @@
             >;
         };
 
-        layer_5 {
+        fn {
             display-name = "Fun";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
